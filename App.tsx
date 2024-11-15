@@ -1,7 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React, { useState } from 'react'
 
+import BouncyCheckbox from "react-native-bouncy-checkbox";
+
 import * as Yup from 'yup'
+import{ Formik } from 'formik';
 
 const PasswordSchema = Yup.object().shape({
   passwordLength: Yup.number()
@@ -65,9 +68,7 @@ export default function App() {
     setSymbols(false)
   }
   return (
-    <View>
-      <Text>App</Text>
-    </View>
+    
   )
 }
 
